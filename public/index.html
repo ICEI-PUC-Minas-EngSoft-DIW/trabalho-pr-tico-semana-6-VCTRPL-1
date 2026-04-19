@@ -1,12 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Yartist</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/09400398b6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+
+    <div class="sidebar">
+        <button class="nav-btn">Início</button>
+        <button class="nav-btn">Spotify</button>
+        <button class="nav-btn">Melhores</button>
+        <button class="nav-btn">História</button>
+    </div>
+
+    <div class="conteudo">
+
+        <header>
+            <i class="fa-solid fa-circle-user"></i> <alt="Foto de perfil" class="foto-perfil">
+             <h1>Yartist</h1>
+            <div class="busca">
+                <input type="text" placeholder="pesquisar..." id="txtBusca">
+                <button id="btnBusca">Buscar</button>
+            </div>
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#artistas">Artistas</a>
+                <a href="#albuns">Álbuns</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <section class="secao" id="musicas">
+                <h2>Músicas</h2>
+                <div class="grid">
+                    <div class="card">
+                        <div class="thumb"></div>
+                        <p class="titulo">Nome da música</p>
+                        <p class="sub">Artista</p>
+                    </div>
+                    <div class="card">
+                        <div class="thumb"></div>
+                        <p class="titulo">Nome da música</p>
+                        <p class="sub">Artista</p>
+                    </div>
+                    <div class="card">
+                        <div class="thumb"></div>
+                        <p class="titulo">Nome da música</p>
+                        <p class="sub">Artista</p>
+                    </div>
+                    <div class="card">
+                        <div class="thumb"></div>
+                        <p class="titulo">Nome da música</p>
+                        <p class="sub">Artista</p>
+                    </div>
+                    <div class="card">
+                        <div class="thumb"></div>
+                        <p class="titulo">Nome da música</p>
+                        <p class="sub">Artista</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="secao" id="albuns">
+                <h2>Álbuns</h2>
+                <div class="grid">
+                    <div class="card">
+                        <div class="thumb"></div>
+                        <p class="titulo">Nome do álbum</p>
+                        <p class="sub">Artista · Ano</p>
+                    </div>
+                    <div class="card">
+                        <div class="thumb"></div>
+                        <p class="titulo">Nome do álbum</p>
+                        <p class="sub">Artista · Ano</p>
+                    </div>
+                    <div class="card">
+                        <div class="thumb"></div>
+                        <p class="titulo">Nome do álbum</p>
+                        <p class="sub">Artista · Ano</p>
+                    </div>
+                    <div class="card">
+                        <div class="thumb"></div>
+                        <p class="titulo">Nome do álbum</p>
+                        <p class="sub">Artista · Ano</p>
+                    </div>
+                    <div class="card">
+                        <div class="thumb"></div>
+                        <p class="titulo">Nome do álbum</p>
+                        <p class="sub">Artista · Ano</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
 </body>
 </html>
