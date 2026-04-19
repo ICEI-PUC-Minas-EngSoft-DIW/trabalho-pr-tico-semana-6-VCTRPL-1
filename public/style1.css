@@ -1,0 +1,202 @@
+/* ══════════════════════════════════════
+   Yartist — style1.css
+   (Layout responsivo feito pelo Bootstrap;
+    este arquivo cuida apenas do visual)
+   ══════════════════════════════════════ */
+
+/* ── Variáveis globais ── */
+:root {
+    --bg:       #0f0f13;
+    --surface:  #1a1a24;
+    --card-bg:  #22222f;
+    --accent:   #a855f7;
+    --accent2:  #7c3aed;
+    --text:     #e2e2f0;
+    --muted:    #7b7b9a;
+    --thumb-bg: #2e2e3e;
+}
+
+/* ── Base ── */
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+    background-color: var(--surface);
+    min-height: 100vh;
+    padding-top: 1.5rem;
+    border-right: 1px solid rgba(168, 85, 247, .15);
+}
+
+/* Em mobile a sidebar vira barra horizontal (Bootstrap col-12 empilha automaticamente) */
+@media (max-width: 767.98px) {
+    .sidebar {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid rgba(168, 85, 247, .15);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: .5rem;
+        padding: .75rem;
+    }
+}
+
+/* ── Botões da sidebar ── */
+.nav-btn {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: var(--muted);
+    text-align: left;
+    padding: .65rem 1.5rem;
+    font-size: .95rem;
+    transition: color .2s, background .2s;
+    border-left: 3px solid transparent;
+}
+
+.nav-btn:hover {
+    color: var(--accent);
+    background: rgba(168, 85, 247, .08);
+    border-left-color: var(--accent);
+}
+
+@media (max-width: 767.98px) {
+    .nav-btn {
+        width: auto;
+        border-left: none;
+        border-bottom: 2px solid transparent;
+        padding: .4rem .9rem;
+        border-radius: 999px;
+    }
+
+    .nav-btn:hover {
+        border-left-color: transparent;
+        border-bottom-color: var(--accent);
+        background: rgba(168, 85, 247, .12);
+    }
+}
+
+/* ── Header ── */
+header {
+    background-color: var(--surface);
+    border-bottom: 1px solid rgba(168, 85, 247, .15);
+    padding: 1rem 1.5rem;
+}
+
+header .fa-circle-user {
+    font-size: 2rem;
+    color: var(--accent);
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+    margin: 0;
+}
+
+/* ── Busca ── */
+#txtBusca {
+    background: var(--card-bg);
+    border: 1px solid rgba(168, 85, 247, .3);
+    color: var(--text);
+    border-radius: 8px 0 0 8px;
+    padding: .4rem .9rem;
+    outline: none;
+}
+
+#txtBusca::placeholder {
+    color: var(--muted);
+}
+
+#txtBusca:focus {
+    border-color: var(--accent);
+}
+
+#btnBusca {
+    background: var(--accent);
+    border: none;
+    color: #fff;
+    padding: .4rem .9rem;
+    border-radius: 0 8px 8px 0;
+    transition: background .2s;
+}
+
+#btnBusca:hover {
+    background: var(--accent2);
+}
+
+/* ── Nav links do header ── */
+header nav a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: .9rem;
+    transition: color .2s;
+}
+
+header nav a:hover {
+    color: var(--accent);
+}
+
+/* ── Seções ── */
+.secao h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text);
+    border-left: 3px solid var(--accent);
+    padding-left: .75rem;
+    margin-bottom: 1.25rem;
+}
+
+/* ── Cards ── */
+.card {
+    background: var(--card-bg);
+    border: 1px solid rgba(168, 85, 247, .12);
+    border-radius: 12px;
+    padding: .75rem;
+    transition: transform .2s, border-color .2s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+/* ── Thumbnail ── */
+.thumb {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 8px;
+    background: var(--thumb-bg);
+    background-image: linear-gradient(135deg, rgba(168, 85, 247, .2), rgba(124, 58, 237, .05));
+    margin-bottom: .65rem;
+}
+
+/* ── Textos do card ── */
+.titulo {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: .15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sub {
+    font-size: .8rem;
+    color: var(--muted);
+    margin: 0;
+}
+
+/* ── Área de conteúdo ── */
+.conteudo {
+    min-height: 100vh;
+}
