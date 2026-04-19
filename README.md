@@ -8,10 +8,10 @@ No trabalho dessa semana vamos alterar o projeto para que a responsividade da ho
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Victor Reis Silva de Paula
+- Matricula: 911790
+- Proposta de projeto escolhida: Página para aristas
+- Breve descrição sobre seu projeto: Uma página onde artistas se cadastram e colocam suas músicas, álbuns e biografia/história de vida, dando assim, mais alcançe e 
 
 ## Print da versão responsiva com Bootstrap [DESKTOP]
 
